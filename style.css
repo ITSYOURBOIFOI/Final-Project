@@ -25,11 +25,14 @@ body {
 /* Header */
 header {
   background-color: #0f0f0f;
-  padding: 20px 2rem;
+  padding: 20px 0;
   border-bottom: 2px solid cyan;
 }
 
 .navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
