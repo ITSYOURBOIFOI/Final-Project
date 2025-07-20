@@ -41,9 +41,11 @@
     <p>&copy; 2025 FoiTech. All rights reserved.</p>
   </footer>
 
-  <script src="particles.js"></script>
-  <script>
-    particlesJS.load('particles-js', 'particles.json');
-  </script>
+<script src="particles.js"></script>
+<script>
+  particlesJS.load('particles-js', 'particles.json', function () {
+    console.log('particles.js config loaded on About page');
+  });
+</script>
 </body>
 </html>
