@@ -7,53 +7,58 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- Particle background -->
   <div id="particles-js"></div>
 
-  <header>
-    <div class="logo-container">
-      <img src="images/Foi Logo.png" alt="FoiTech Logo" class="logo" />
-      <h1>FoiTech</h1>
-    </div>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-    </nav>
-  </header>
+  <!-- Main content wrapper -->
+  <div class="content">
+    <header>
+      <div class="logo-container">
+        <img src="images/logo.png" alt="FoiTech Logo" class="logo" />
+        <h1>FoiTech</h1>
+      </div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+      </nav>
+    </header>
 
-  <main>
-    <section class="hero">
-      <h2>Welcome to FoiTech</h2>
-      <p>The future of tech, delivered today. This is your customizable homepage text.</p>
-    </section>
-    <section class="info">
-      <h3>Latest Innovations</h3>
-      <p>[Insert your cool feature highlights or news here]</p>
-    </section>
-  </main>
+    <main>
+      <section class="hero">
+        <h2>Welcome to FoiTech</h2>
+        <p>The future of tech, delivered today. This is your customizable homepage text.</p>
+      </section>
+      <section class="info">
+        <h3>Latest Innovations</h3>
+        <p>[Insert your cool feature highlights or news here]</p>
+      </section>
+    </main>
 
-  <footer>
-    <p>&copy; 2025 FoiTech. Powered by innovation.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 FoiTech. Powered by innovation.</p>
+    </footer>
+  </div>
 
+  <!-- Particle JS -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
-<script>
-  window.onload = () => {
-    particlesJS("particles-js", {
-      particles: {
-        number: { value: 80 },
-        color: { value: "#00f0ff" },
-        shape: { type: "circle" },
-        opacity: { value: 0.5 },
-        size: { value: 3 },
-        line_linked: { enable: true, color: "#00f0ff" },
-        move: { enable: true, speed: 2 }
-      },
-      interactivity: {
-        events: { onhover: { enable: true, mode: "repulse" } },
-        modes: { repulse: { distance: 100 } }
-      }
-    });
-  };
-</script>
+  <script>
+    window.onload = () => {
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 80 },
+          color: { value: "#00f0ff" },
+          shape: { type: "circle" },
+          opacity: { value: 0.5 },
+          size: { value: 3 },
+          line_linked: { enable: true, color: "#00f0ff" },
+          move: { enable: true, speed: 2 }
+        },
+        interactivity: {
+          events: { onhover: { enable: true, mode: "repulse" } },
+          modes: { repulse: { distance: 100 } }
+        }
+      });
+    };
+  </script>
 </body>
 </html>
