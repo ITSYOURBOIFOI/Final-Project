@@ -4,12 +4,22 @@
   box-sizing: border-box;
 }
 
-body, html {
+html, body {
+  height: 100%;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #1a1a1a;
   color: #e0f7ff;
-  height: 100%;
-  position: relative;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 #particles-js {
@@ -19,7 +29,6 @@ body, html {
   z-index: -1;
   top: 0;
   left: 0;
-  background-color: #1a1a1a;
 }
 
 header {
@@ -45,13 +54,9 @@ header {
   filter: drop-shadow(0 0 5px #00f0ff);
 }
 
-nav {
-  margin-top: 0.5rem;
-}
-
 nav a {
   color: #e0f7ff;
-  margin: 0 15px;
+  margin-right: 15px;
   text-decoration: none;
   font-weight: bold;
   transition: color 0.3s;
@@ -62,9 +67,10 @@ nav a:hover {
 }
 
 main {
+  flex: 1;
   padding: 2rem;
   max-width: 800px;
-  margin: 2rem auto;
+  margin: auto;
 }
 
 .hero, .info, .about {
@@ -81,7 +87,5 @@ footer {
   text-align: center;
   padding: 1rem;
   border-top: 2px solid #00f0ff;
-  position: relative;
-  bottom: 0;
   width: 100%;
 }
