@@ -2,47 +2,55 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>About Us - FoiTech</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div id="particles-js"></div>
 
-  <div class="content">
-    <header>
+  <header>
+    <div class="logo-container">
       <img src="Foi Logo.png" alt="FoiTech Logo" class="logo" />
-      <h1>About FoiTech</h1>
-    </header>
+      <h1>FoiTech</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+    </nav>
+  </header>
 
-    <main>
-      <h2>Our Mission</h2>
-      <p>FoiTech is focused on building futuristic technologies to revolutionize how we live and work. Edit this text later!</p>
-    </main>
+  <main class="content">
+    <section class="about-section">
+      <h2>About FoiTech</h2>
+      <p>Welcome to FoiTech, where innovation meets the future.</p>
+      <p>We are a forward-thinking tech startup dedicated to developing futuristic digital solutions using AI, automation, and sleek design.</p>
+      <p>Our mission is to create powerful and user-friendly experiences that push the limits of modern technology.</p>
+      <p>Feel free to modify this text later with your own content.</p>
+    </section>
+  </main>
 
-    <footer>
-      <p>&copy; 2025 FoiTech. All rights reserved.</p>
-    </footer>
-  </div>
+  <footer>
+    <p>&copy; 2025 FoiTech. All rights reserved.</p>
+  </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="particles.js"></script>
   <script>
     window.onload = () => {
       particlesJS("particles-js", {
         particles: {
-          number: { value: 60 },
+          number: { value: 80 },
           color: { value: "#00f0ff" },
           shape: { type: "circle" },
           opacity: { value: 0.5 },
           size: { value: 3 },
-          line_linked: { enable: true, distance: 150, color: "#00f0ff" },
-          move: { enable: true, speed: 1 }
+          line_linked: { enable: true, color: "#00f0ff" },
+          move: { enable: true, speed: 2 }
         },
         interactivity: {
           events: { onhover: { enable: true, mode: "repulse" } },
           modes: { repulse: { distance: 100 } }
-        },
-        retina_detect: true
+        }
       });
     };
   </script>
