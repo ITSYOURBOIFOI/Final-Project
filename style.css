@@ -1,16 +1,28 @@
+/* Reset and base styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
 }
 
 html, body {
   height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #1a1a1a;
-  color: #e0f7ff;
+  background-color: #121212;
+  color: #e0e0e0;
 }
 
+/*  This is the Background animation */
+#particles-js {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+/* Content layout */
 body {
   display: flex;
   flex-direction: column;
@@ -22,48 +34,22 @@ body {
   flex-direction: column;
 }
 
-#particles-js {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  background-color: #1a1a1a;
-}
-
 header {
-  background-color: #111;
-  padding: 1rem 2rem;
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  padding: 20px;
+  background-color: #1c1c1c;
   border-bottom: 2px solid #00f0ff;
 }
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 15px;
-  margin-bottom: 0.5rem;
-}
-
 .logo {
-  width: 60px;
-  height: 60px;
-  filter: drop-shadow(0 0 5px #00f0ff);
-}
-
-nav a {
-  color: #e0f7ff;
+  width: 80px;
+  height: auto;
   margin-right: 15px;
-  text-decoration: none;
-  font-weight: bold;
-  transition: color 0.3s;
 }
 
-nav a:hover {
+h1 {
+  font-size: 2.5rem;
   color: #00f0ff;
 }
 
@@ -74,17 +60,14 @@ main {
   margin: auto;
 }
 
-.hero, .info, .about {
-  background-color: #2a2a2a;
-  padding: 1.5rem;
-  margin-bottom: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #00f0ff30;
-  text-align: center;
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00f0ff;
 }
 
 footer {
-  background-color: #111;
+  background-color: #1c1c1c;
   text-align: center;
   padding: 1rem;
   border-top: 2px solid #00f0ff;
