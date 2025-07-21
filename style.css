@@ -172,7 +172,7 @@ footer {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw; /* Force full viewport width */
+  width: 100%; /* Fix: Match container width, not viewport */
   height: 100%;
   object-fit: cover;
   opacity: 0;
