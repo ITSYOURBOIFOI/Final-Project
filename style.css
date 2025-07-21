@@ -151,9 +151,9 @@ footer {
 
 .carousel-container {
   position: relative;
-  width: 80%;
-  max-width: 800px;
-  height: 400px;
+  width: 90%; /* Optional: makes it flexible on wider screens */
+  max-width: 1000px; /* Increase from 800px to 1000px (or more if you want) */
+  height: 500px; /* Increase height */
   margin: 2rem auto;
   border-radius: 15px;
   overflow: hidden;
