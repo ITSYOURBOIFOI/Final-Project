@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Foi Web</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="particles-js"></div>
+
+  <header>
+    <nav class="navbar container">
+      <div class="logo-title">
+        <a href="index.html"><img src="images/Foi Logo.png" alt="Foi Web Logo" class="logo" /></a>
+        <h1 class="title">Foi Web</h1>
+      </div>
+      <ul class="nav-links">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact-section">
+      <div class="info-box large futuristic">
+        <h2>Contact Me</h2>
+        <p>You can reach me through the following:</p>
+        <ul style="margin-top: 1rem;">
+          <li><strong>Phone:</strong> 09667437839</li>
+          <li><strong>Email:</strong> <a href="mailto:foilanrocks@gmail.com">foilanrocks@gmail.com</a></li>
+        </ul>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submission coming soon!');">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Message" rows="4" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Foi Web. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+  <script>
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Particles loaded.');
+    });
+  </script>
+</body>
+</html>
