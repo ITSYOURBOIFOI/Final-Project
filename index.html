@@ -5,46 +5,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Foi Web</title>
   <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Particle background -->
   <div id="particles-js"></div>
 
   <!-- Header -->
-<header style="background-color: #0f0f0f; padding: 1rem 0; border-bottom: 2px solid cyan;">
-  <nav class="navbar">
-    <!-- Logo and Title -->
-    <a href="index.html" class="logo-title">
-      <img src="images/Foi Logo.png" alt="FoiTech Logo" class="logo">
-      <h1 class="title">Foi Web</h1>
-    </a>
+  <header style="background-color: #0f0f0f; padding: 1rem 0; border-bottom: 2px solid cyan;">
+    <nav class="navbar container">
+      <div class="logo-title">
+        <a href="index.html"><img src="images/Foi Logo.png" alt="Foi Web Logo" class="logo"></a>
+        <h1 class="title">Foi Web</h1>
+      </div>
 
-    <!-- Hamburger icon for mobile -->
-    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
 
-    <!-- Nav Links -->
-    <ul class="nav-links" id="navLinks">
-      <li><a href="about.html">About</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <!-- Main Content -->
-<main>
-  <h2>Welcome to the Foi Web</h2>
-  <p>This is a simple landing page for my website.</p>
+  <main>
+    <h2>Welcome to the Foi Web</h2>
+    <p>This is a simple landing page for my website.</p>
 
-  <!-- Carousel Container -->
-  <div class="carousel-container">
-    <div class="carousel">
-      <img src="images/carousel1.png" class="carousel-image active" alt="Slide 1">
-      <img src="images/carousel2.png" class="carousel-image" alt="Slide 2">
-      <img src="images/carousel3.png" class="carousel-image" alt="Slide 3">
+    <div class="carousel-container">
+      <div class="carousel">
+        <img src="images/carousel1.png" class="carousel-image active" alt="Slide 1">
+        <img src="images/carousel2.png" class="carousel-image" alt="Slide 2">
+        <img src="images/carousel3.png" class="carousel-image" alt="Slide 3">
+      </div>
     </div>
-  </div>
-</main>
+  </main>
 
   <!-- Footer -->
   <footer>
@@ -54,26 +51,22 @@
   <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
+    particlesJS.load('particles-js', 'particles.json', function () {
       console.log('Particles loaded.');
     });
+
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
+
+    let current = 0;
+    const slides = document.querySelectorAll('.carousel-image');
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
   </script>
-  <script>
-  function toggleMenu() {
-    const nav = document.getElementById('navLinks');
-    nav.classList.toggle('show');
-  }
-</script>
-<script>
-  let current = 0;
-  const slides = document.querySelectorAll('.carousel-image');
-
-  setInterval(() => {
-    slides[current].classList.remove('active');
-    current = (current + 1) % slides.length;
-    slides[current].classList.add('active');
-  }, 4000); // 4 seconds
-</script>
-
 </body>
 </html>
