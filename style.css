@@ -123,32 +123,35 @@ footer {
     display: block;
   }
 }
+
 /* About Page */
 .about-section {
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
+  min-height: 80vh;
+  padding: 40px 20px;
+}
+
+.info-box.large {
   max-width: 800px;
-  margin: 0 auto;
-  padding: 60px 20px;
-}
-
-.info-box, .contact-box {
-  background-color: #1b1b1b;
-  border: 1px solid cyan;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
-  color: white;
-  text-align: justify;
   width: 100%;
+  background-color: rgba(20, 20, 20, 0.85);
+  border: 2px solid cyan;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 0 20px cyan;
+  text-align: center;
 }
 
-.contact-box p {
-  margin: 10px 0;
+.futuristic {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1rem;
+  color: #d0faff;
+  line-height: 1.7;
 }
 
+/* Carousel */
 .carousel-container {
   position: relative;
   width: 90%; /* Optional: makes it flexible on wider screens */
