@@ -134,23 +134,25 @@ footer {
 }
 
 .info-box {
-  max-width: 1100px;  /* was 900px */
-  width: 95%;         /* was 90% */
-  padding: 60px;      /* was 40px */
-  background-color: rgba(30, 30, 30, 0.8);
+  max-width: 1200px;    /* was 1100px – made larger */
+  width: 95%;
+  padding: 80px;        /* was 60px – more breathing room */
+  background-color: rgba(30, 30, 30, 0.85);
   color: #00ffff;
   font-family: 'Orbitron', sans-serif;
-  font-size: 20px;    /* optional: slightly bigger text */
+  font-size: 22px;      /* increased font size */
   border-radius: 20px;
-  box-shadow: 0 0 20px #00ffff;
+  box-shadow: 0 0 30px #00ffff;
   text-align: center;
+  line-height: 2;       /* better readability */
 }
 
+/* Optional: If .futuristic is still used separately */
 .futuristic {
   font-family: 'Orbitron', sans-serif;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: #d0faff;
-  line-height: 1.7;
+  line-height: 2;
 }
 
 /* Carousel */
@@ -231,4 +233,12 @@ footer {
 
 .contact-form button:hover {
   background-color: #00ffffcc;
+}
+
+@media (max-width: 768px) {
+  .info-box {
+    padding: 40px;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
 }
