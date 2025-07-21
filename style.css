@@ -134,13 +134,13 @@ footer {
 }
 
 .info-box {
-  max-width: 900px; /* increased from 700px */
-  width: 90%;
-  padding: 40px;
+  max-width: 1100px;  /* was 900px */
+  width: 95%;         /* was 90% */
+  padding: 60px;      /* was 40px */
   background-color: rgba(30, 30, 30, 0.8);
   color: #00ffff;
-  font-family: 'Orbitron', sans-serif; /* futuristic font */
-  font-size: 18px;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 20px;    /* optional: slightly bigger text */
   border-radius: 20px;
   box-shadow: 0 0 20px #00ffff;
   text-align: center;
