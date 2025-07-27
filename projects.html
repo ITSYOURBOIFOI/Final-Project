@@ -2,54 +2,64 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Projects | Foi Web</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects - Foi Web</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <!-- Particle Background -->
+  <!-- Particle background -->
   <div id="particles-js"></div>
 
   <!-- Header -->
-  <header class="header">
-    <div class="navbar">
-      <a href="index.html" class="logo-link">
-        <img src="Foi Logo.png" alt="Foi Web Logo" class="logo" />
-        <span class="site-title">Foi Web</span>
-      </a>
-      <nav class="nav-links">
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
+  <header style="background-color: #0f0f0f; padding: 1rem 0; border-bottom: 2px solid cyan;">
+    <nav class="navbar container">
+      <div class="logo-title">
+        <a href="index.html"><img src="images/Foi Logo.png" alt="Foi Web Logo" class="logo"></a>
+        <h1 class="title">Foi Web</h1>
+      </div>
+
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <!-- Projects Section -->
-  <main class="projects-section">
-    <div class="projects-container">
-      <div class="project-box">
-        <h2>First Seatwork</h2>
-        <p>This project was focused on Headers and Footers. It helped me understand layout principles and design.</p>
+  <!-- Main -->
+  <main>
+    <section class="about-section">
+      <div class="info-box large futuristic">
+        <h2>Seatwork 1</h2>
+        <p>This box can showcase your first project or seatwork. You can include details like what it was about, what technologies you used, and what you learned from it.</p>
       </div>
-      <div class="project-box">
-        <h2>Second Seatwork</h2>
-        <p>In this task, I explored more advanced styling and page structure. It involved creating interactive elements and refining the overall visual appeal.</p>
+
+      <div class="info-box large futuristic">
+        <h2>Seatwork 2</h2>
+        <p>This box is for your second seatwork. You can later replace this text with actual content or links to interactive demos or GitHub repositories.</p>
       </div>
-    </div>
+    </section>
   </main>
 
   <!-- Footer -->
-  <footer class="footer">
+  <footer>
     <p>&copy; 2025 Foi Web. All rights reserved.</p>
   </footer>
 
-  <!-- Particle JS Script -->
+  <!-- Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
   <script>
-    particlesJS.load('particles-js', 'particles.json', function() {
-      console.log('Particles.js loaded.');
+    particlesJS.load('particles-js', 'particles.json', function () {
+      console.log('Particles loaded.');
     });
+
+    function toggleMenu() {
+      const nav = document.getElementById('navLinks');
+      nav.classList.toggle('show');
+    }
   </script>
 </body>
 </html>
