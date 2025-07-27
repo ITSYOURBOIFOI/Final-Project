@@ -10,19 +10,22 @@
 <body>
   <div id="particles-js"></div>
 
-  <header>
-    <nav class="navbar container">
-      <div class="logo-title">
-        <a href="index.html"><img src="images/Foi Logo.png" alt="Foi Web Logo" class="logo" /></a>
-        <h1 class="title">Foi Web</h1>
-      </div>
-      <ul class="nav-links">
-        <li><a href="about.html">About</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<header style="background-color: #0f0f0f; padding: 1rem 0; border-bottom: 2px solid cyan;">
+  <nav class="navbar container">
+    <div class="logo-title">
+      <a href="index.html"><img src="images/Foi Logo.png" alt="Foi Web Logo" class="logo"></a>
+      <h1 class="title">Foi Web</h1>
+    </div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="about.html">About</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
   <main>
     <section class="contact-section">
