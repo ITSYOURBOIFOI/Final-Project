@@ -1,5 +1,5 @@
-<p align="center">
-  <img src="images/Foi Logo.png" alt="Foi Web Logo" width="200"/>
+<p align="center" style="background-color: white; padding: 10px; border-radius: 12px;">
+  <img src="foi-logo.png" alt="Foi Web Logo" width="200"/>
 </p>
 
 # 🌐 Foi Web - Final Project
