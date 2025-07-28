@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/Foi Logo.png" alt="Foi Web Logo" width="200"/>
+</p>
+
 # 🌐 Foi Web - Final Project
 
 Welcome to **Foi Web**, a modern and sleek website built as a final requirement for our Web Design course. This project reflects a mix of creativity, interactivity, and clean user interface design.
@@ -25,7 +29,7 @@ This website was developed to demonstrate key web development concepts and techn
 - `contact.html` – Contact section with form and personal info
 - `style.css` – External stylesheet for design and responsiveness
 - `particles.json` – Settings for animated particle background
-- `Foi Logo.png` – Website logo in the header
+- `images` – Website images used
 
 ## 🚀 Live Preview
 
