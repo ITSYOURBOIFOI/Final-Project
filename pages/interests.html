@@ -32,15 +32,30 @@
   <main>
     <section class="about-section">
       <div class="info-box large futuristic">
-        <h2>My Interests</h2>
-        <p>
-          I’m passionate about technology, especially software development, user interface design, and cybersecurity.
-          <br><br>
-          In my free time, I enjoy gaming, creating digital art, learning new programming languages, and exploring space and science fiction media.
-          <br><br>
-          I’m also curious about emerging tech like artificial intelligence, quantum computing, and robotics. These areas inspire me to keep learning and stay creative in the field of IT.
-        </p>
-      </div>
+  <h2>My Interests</h2>
+  <p>
+    I’m passionate about technology, especially software development, user interface design, and cybersecurity.
+    <br><br>
+    In my free time, I enjoy gaming, creating digital art, learning new programming languages, and exploring space and science fiction media.
+    <br><br>
+    I’m also curious about emerging tech like artificial intelligence, quantum computing, and robotics. These areas inspire me to keep learning and stay creative in the field of IT.
+  </p>
+
+  <div class="mini-carousel-container">
+    <button class="carousel-btn" onclick="prevSlide()">&#10094;</button>
+    
+    <div class="mini-carousel">
+      <img src="../assets/images/int1.jpg" class="mini-slide active" alt="Interest 1">
+      <img src="../assets/images/int2.jpg" class="mini-slide" alt="Interest 2">
+      <img src="../assets/images/int3.jpg" class="mini-slide" alt="Interest 3">
+      <img src="../assets/images/int4.jpg" class="mini-slide" alt="Interest 4">
+      <img src="../assets/images/int5.jpg" class="mini-slide" alt="Interest 5">
+    </div>
+
+    <button class="carousel-btn" onclick="nextSlide()">&#10095;</button>
+  </div>
+</div>
+
     </section>
   </main>
 
@@ -59,5 +74,33 @@
       nav.classList.toggle('show');
     }
   </script>
+
+  <script>
+  let interestSlides = document.querySelectorAll('.mini-slide');
+  let currentSlide = 0;
+
+  function showSlide(index) {
+    interestSlides.forEach((slide, i) => {
+      slide.classList.remove('active');
+      if (i === index) {
+        slide.classList.add('active');
+      }
+    });
+  }
+
+  function prevSlide() {
+    currentSlide = (currentSlide - 1 + interestSlides.length) % interestSlides.length;
+    showSlide(currentSlide);
+  }
+
+  function nextSlide() {
+    currentSlide = (currentSlide + 1) % interestSlides.length;
+    showSlide(currentSlide);
+  }
+
+  // Initialize
+  showSlide(currentSlide);
+</script>
+
 </body>
 </html>

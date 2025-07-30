@@ -305,3 +305,54 @@ footer {
   box-shadow: 0 0 20px cyan;
   object-fit: cover;
 }
+
+.mini-carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 1rem;
+  flex-wrap: nowrap;
+}
+
+.mini-carousel {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 0 10px cyan;
+}
+
+.mini-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  border-radius: 12px;
+}
+
+.mini-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-btn {
+  background-color: cyan;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  color: black;
+  font-weight: bold;
+}
+
+.carousel-btn:hover {
+  background-color: #00ffffcc;
+}
