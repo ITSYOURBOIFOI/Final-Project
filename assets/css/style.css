@@ -134,20 +134,19 @@ footer {
 }
 
 .info-box {
-  max-width: 1200px;    /* was 1100px – made larger */
+  max-width: 1200px;  
   width: 95%;
-  padding: 80px;        /* was 60px – more breathing room */
+  padding: 80px;      
   background-color: rgba(30, 30, 30, 0.85);
   color: #00ffff;
   font-family: 'Orbitron', sans-serif;
-  font-size: 22px;      /* increased font size */
+  font-size: 22px;      
   border-radius: 20px;
   box-shadow: 0 0 30px #00ffff;
   text-align: center;
-  line-height: 2;       /* better readability */
+  line-height: 2;      
 }
 
-/* Optional: If .futuristic is still used separately */
 .futuristic {
   font-family: 'Orbitron', sans-serif;
   font-size: 1.3rem;
@@ -158,9 +157,9 @@ footer {
 /* Carousel */
 .carousel-container {
   position: relative;
-  width: 90%; /* Optional: makes it flexible on wider screens */
-  max-width: 1000px; /* Increase from 800px to 1000px (or more if you want) */
-  height: 500px; /* Increase height */
+  width: 90%; 
+  max-width: 1000px; 
+  height: 500px;
   margin: 2rem auto;
   border-radius: 15px;
   overflow: hidden;
@@ -269,4 +268,20 @@ footer {
   width: 100%;
   border-radius: 8px;
   margin: 10px 0;
+}
+
+.profile-image-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  margin-top: -30px;
+}
+
+.profile-image {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid cyan;
+  box-shadow: 0 0 20px cyan;
+  object-fit: cover;
 }
